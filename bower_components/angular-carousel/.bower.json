@@ -30,6 +30,7 @@
     "commit": "12f28ed1de9d78b4c1f9cf58ca71cdf4a8452643"
   },
   "_source": "git://github.com/revolunet/angular-carousel.git",
-  "_target": "*",
-  "_originalSource": "angular-carousel"
+  "_target": "~0.3.12",
+  "_originalSource": "angular-carousel",
+  "_direct": true
 }

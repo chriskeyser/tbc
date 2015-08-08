@@ -1,11 +1,10 @@
 <div ng-controller="MainCtrl">
     <div class="row">
         <div class="col-md-offset-1 col-md-9 rotator">
-            <carousel interval="eventInterval" style="padding:1px;" disable-ng-animate>
+            <carousel interval="eventInterval" style="padding:1px;">
                 <slide ng-repeat="slide in eventSlides" active="slide.active">
                     <div class="col-md-6" style="padding-bottom:10px;">
                         <a href='{{slide.url}}'><img ng-src="{{slide.image}}" class="img-responsive dropshadow-image"></a>
-                        <div class="attribution">{{slide.attribution}}</div>
                     </div>
 
                     <div class="col-md-6 announce">
@@ -13,6 +12,7 @@
                         <div class="announce-subtitle">{{slide.location}}</div>
                         <div class="announce-subtitle">{{slide.datetime}}</div>
                         <p class="announce-text">{{slide.text}}<br /><a href="{{slide.url}}" style="color:#b60404;text-align:right;font-size:12px;">Click here for more information</a></p>
+                        <div class="attribution">{{slide.attribution}}</div>
                     </div>
                 </slide>
             </carousel>

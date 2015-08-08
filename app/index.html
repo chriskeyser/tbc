@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.css" />
+    <link rel="stylesheet" href="bower_components/angular-carousel/dist/angular-carousel.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -92,13 +93,26 @@
                         </li>
                     </ul>
 
-                     <ul class="nav navbar-nav navbar-right" style="margin-right:20px;">
+                    <div class="nav navbar-nav navbar-right" style="margin-top:8px;">
+                        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                            <a class="a2a_button_facebook"></a>
+                            <a class="a2a_button_twitter"></a>
+                            <a class="a2a_dd" href="https://www.addtoany.com/share_save"></a>
+                        </div>
+                    </div>
+                     <!--ul class="nav navbar-nav navbar-right" style="margin-right:20px;">
                         <li><a style="padding-left:0px;padding-right:0px;" target="_blank" href="https://twitter.com/share?url=http://www.dalailamaphilly.org"><i class="fa fa-twitter"></i></a></li>
                         <li><a style="padding-left:5px;" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.dalailamaphilly.org"><i class="fa fa-facebook"></i></a></li>
-                    </ul>
+                    </ul -->
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
+        <div class="row">
+        </div>
+
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+            </div>
+        </div>
         <div class="row"> 
             <div class="col-md-12">
                 <img src="images/tibet-blue-text.jpg" class="img-responsive header-text-img  center-block" />
@@ -107,7 +121,7 @@
     </div>
 
     <div class="container-fluid">
-                <div ng-view="" ng-cloak></div>
+        <div ng-view="" ng-cloak></div>
     </div>
 
     <div class="col-md-offset-10">
@@ -133,8 +147,11 @@
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.js"></script>
+    <script src="bower_components/angular-carousel/dist/angular-carousel.js"></script>
     <!-- endbower -->
-    <!-- endbuild -->   
+    <script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+    <!-- endbuild -->
+
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>

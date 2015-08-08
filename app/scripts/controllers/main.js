@@ -9,7 +9,7 @@
  */
 angular.module('tbcApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.eventInterval = 7000;
+    $scope.eventInterval = 5000;
     $scope.isLoaded = false;
     $scope.loadCompleted = function () {
         $scope.isLoaded = true;

@@ -17,7 +17,8 @@ angular
     'ngSanitize',
     'ngTouch',
     'ui.bootstrap',
-    'bootstrapLightbox'
+    'bootstrapLightbox',
+    'ngAnimate'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -104,11 +105,4 @@ angular
       .otherwise({
         redirectTo: '/'
     });
-}).directive('disableNgAnimate', ['$animate', function ($animate) {
-            return {
-                restrict: 'A',
-                link: function (scope, element) {
-                    $animate.enabled(false, element);
-                }
-            };
-}]);
+});
